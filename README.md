@@ -16,18 +16,10 @@ The samples primarily focus on connecting the React Gantt Chart component with a
 
 These samples showcase adaptor-based data binding techniques supported by the EJ2 React Gantt Chart. The available adaptor examples include:
 - OData v4 Adaptor
-- URL Adaptor
-- Web API Adaptor
+- Remote Save Adaptor
+- Web Method Adaptor
 
-These examples help demonstrate how the Gantt communicates with different data services and handles operations such as paging, sorting, and CRUD actions.
-
-### Connecting to Backends
-
-This section contains samples that integrate the React Gantt Chart with various backend frameworks and server technologies. The examples include:
-- Custom binding
-- GraphQL server
-
-These samples illustrate end-to-end data flow between frontend React applications and backend services.
+These examples help demonstrate how the Gantt communicates with different data services and handles operations such as CRUD actions.
 
 ## Usage
 
@@ -37,4 +29,4 @@ Each sample folder is self-contained. Navigate to the required sample directory,
 
 - [Getting started with React](https://ej2.syncfusion.com/react/documentation/gantt/getting-started)
 - [React Gantt Chart API](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default)
-- [Data Binding](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/data-binding)
+- [Data Binding](https://ej2.syncfusion.com/react/documentation/gantt/data-binding)
