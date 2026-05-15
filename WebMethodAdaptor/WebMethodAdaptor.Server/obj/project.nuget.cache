@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "rjlCcnmsYVE=",
+  "success": true,
+  "projectFilePath": "D:\\1023760-adaptors-sample\\WebMethodAdaptor\\WebMethodAdaptor.Server\\WebMethodAdaptor.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\VigneshSivalingam\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.0\\microsoft.aspnetcore.jsonpatch.8.0.0.nupkg.sha512",
+    "C:\\Users\\VigneshSivalingam\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\8.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.8.0.0.nupkg.sha512",
+    "C:\\Users\\VigneshSivalingam\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.27\\microsoft.aspnetcore.spaproxy.8.0.27.nupkg.sha512",
+    "C:\\Users\\VigneshSivalingam\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\VigneshSivalingam\\.nuget\\packages\\microsoft.extensions.ai.abstractions\\9.9.1\\microsoft.extensions.ai.abstractions.9.9.1.nupkg.sha512",
+    "C:\\Users\\VigneshSivalingam\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\VigneshSivalingam\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\VigneshSivalingam\\.nuget\\packages\\syncfusion.ej2.aspnet.core\\32.2.4\\syncfusion.ej2.aspnet.core.32.2.4.nupkg.sha512",
+    "C:\\Users\\VigneshSivalingam\\.nuget\\packages\\syncfusion.licensing\\32.2.4\\syncfusion.licensing.32.2.4.nupkg.sha512"
+  ],
+  "logs": []
+}

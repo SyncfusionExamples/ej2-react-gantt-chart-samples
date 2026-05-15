@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="remotesaveadaptor.client/remotesaveadaptor.client.esproj" DisplayName="RemoteSaveAdaptor.client">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="RemoteSaveAdaptor.Server/RemoteSaveAdaptor.Server.csproj" />
+</Solution>
