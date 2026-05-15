@@ -1,0 +1,6 @@
+@ODataV4Adaptor.Server_HostAddress = http://localhost:5299
+
+GET {{ODataV4Adaptor.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,6 @@
+@WebMethodAdaptorDemo.Server_HostAddress = http://localhost:5095
+
+GET {{WebMethodAdaptorDemo.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

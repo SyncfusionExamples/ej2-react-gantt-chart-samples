@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:61691",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "D:\\1023760-adaptors-sample\\WebMethodAdaptor\\WebMethodAdaptor.Server\\..\\webmethodadaptordemo.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

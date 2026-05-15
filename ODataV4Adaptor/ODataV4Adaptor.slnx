@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="odatav4adaptor.client/odatav4adaptor.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="ODataV4Adaptor.Server/ODataV4Adaptor.Server.csproj" />
+</Solution>
