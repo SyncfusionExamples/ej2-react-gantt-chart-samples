@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   // Configure DataManager with WebMethodAdaptor
   const data = new DataManager({
-    url: "https://localhost:7052/api/Gantt",
+    url: "https://localhost:7052/api/Gantt", // Replace 7052 with your port number
     adaptor: new WebMethodAdaptor(),
     crossDomain: true
   });
