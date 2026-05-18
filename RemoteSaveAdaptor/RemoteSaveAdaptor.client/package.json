@@ -10,13 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@syncfusion/ej2-data": "^33.2.5",
+    "@syncfusion/ej2-data": "*",
+    "@syncfusion/ej2-react-gantt": "*",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@syncfusion/ej2-react-gantt": "^33.2.6",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
