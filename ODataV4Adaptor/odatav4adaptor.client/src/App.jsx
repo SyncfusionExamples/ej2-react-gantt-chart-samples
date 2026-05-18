@@ -6,7 +6,7 @@ function App() {
     // Create DataManager with ODataV4Adaptor
     const data = new DataManager({
 
-        url: 'https://localhost:7199/odata/GanttTasks',
+        url: 'https://localhost:7199/odata/GanttTasks', // To change the port, update it in launchSettings.json (server app) and reflect it here
         adaptor: new ODataV4Adaptor(),
         key: 'TaskID',
         crossDomain: true

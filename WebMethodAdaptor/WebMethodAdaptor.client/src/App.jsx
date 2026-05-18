@@ -1,6 +1,7 @@
 import React from "react";
 import { DataManager, WebMethodAdaptor } from "@syncfusion/ej2-data";
 import { GanttComponent, Inject, Edit, Selection, Toolbar, ColumnsDirective, ColumnDirective } from '@syncfusion/ej2-react-gantt';
+import './App.css';
 
 function App() {
   // Configure DataManager with WebMethodAdaptor
