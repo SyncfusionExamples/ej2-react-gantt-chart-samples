@@ -16,13 +16,13 @@ function App() {
 
         hasLoadedRef.current = true;
 
-        fetch('https://localhost:7007/api/gantt') // To change the port, update it in launchSettings.json (server app) and reflect it here
+        fetch('https://localhost:7007/api/gantt') // Replace 7007 with your port number
             .then(res => res.json())
             .then(result => {
                 setData(new DataManager({
                     json: result,
                     adaptor: new RemoteSaveAdaptor(),
-                    batchUrl: 'https://localhost:7007/api/gantt/Batch', // To change the port, update it in launchSettings.json (server app) and reflect it here
+                    batchUrl: 'https://localhost:7007/api/gantt/Batch', // Replace 7007 with your port number
                     enableOffline: true
                 }));
             });
