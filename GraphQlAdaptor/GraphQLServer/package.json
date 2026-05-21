@@ -1,0 +1,19 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "graphpack --port 4205",
+    "build": "graphpack build"
+  },
+  "dependencies": {
+    "@syncfusion/ej2-data": "*",
+    "graphpack": "^1.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
