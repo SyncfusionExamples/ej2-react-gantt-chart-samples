@@ -1,0 +1,2 @@
+D:\Gnatt_chart_EJ2_2.0\custom  adaptor\grid\ej2-react-grid-samples\connecting-to-adaptors\CustomAdaptor\customadaptor.client\obj\Debug\customadaptor.client.esproj.CoreCompileInputs.cache
+D:\Gnatt_chart_EJ2_2.0\custom  adaptor\gantt\CustomAdaptor\CustomAdaptor.client\obj\Debug\customadaptor.client.esproj.CoreCompileInputs.cache
