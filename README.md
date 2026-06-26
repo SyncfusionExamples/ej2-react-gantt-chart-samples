@@ -2,7 +2,7 @@
 
 ## Repository Description
 
-This repository contains categorized sample applications that demonstrate how to use the Syncfusion EJ2 React Gantt Chart in real-world scenarios such as adaptor-based data binding, and backend service integration.
+This repository contains categorized sample applications that demonstrate how to use the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) in real-world scenarios such as adaptor-based data binding, and backend service integration.
 
 ## Project Overview
 
@@ -27,6 +27,7 @@ Each sample folder is self-contained. Navigate to the required sample directory,
 
 ## Reference
 
+- [Explore React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart)
 - [Getting started with React](https://ej2.syncfusion.com/react/documentation/gantt/getting-started)
 - [React Gantt Chart API](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default)
 - [Data Binding](https://ej2.syncfusion.com/react/documentation/gantt/data-binding)
