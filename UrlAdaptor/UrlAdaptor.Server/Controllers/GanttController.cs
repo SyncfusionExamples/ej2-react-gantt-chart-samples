@@ -16,7 +16,7 @@ namespace UrlAdaptor.Server.Controllers
         {
             _logger = logger;
         }
-        public static List<TaskData> DataList = null;
+        public static List<TaskData> DataList = new(); // Note: This example uses an in-memory static collection for demonstration purposes.In production applications, store data in a database or another persistent storage mechanism.
 
         [HttpPost("DataSource")]
         public IActionResult DataSource([FromBody] DataManagerRequest dm)
@@ -43,33 +43,40 @@ namespace UrlAdaptor.Server.Controllers
         {
             try
             {
-                if (batchmodel.Changed != null && batchmodel.Changed.Count != null)
+                if (batchmodel.Changed != null && batchmodel.Changed.Count > 0)
                 {
-                    for (var i = 0; i < batchmodel.Changed.Count(); i++)
+                    for (var i = 0; i < batchmodel.Changed.Count; i++)
                     {
                         var value = batchmodel.Changed[i];
-                        TaskData result = DataList.Where(or => or.taskId == value.taskId).FirstOrDefault();
-                        result.taskId = value.taskId;
-                        result.taskName = value.taskName;
-                        result.startDate = value.startDate;
-                        result.endDate = value.endDate;
-                        result.duration = value.duration;
-                        result.progress = value.progress;
-                        result.predecessor = value.predecessor;
-                        result.parentID = value.parentID;
-                        result.info = value.info;
+                        var result = DataList.FirstOrDefault(or => or.taskId == value.taskId);
+                        if (result != null)
+                        {
+                            result.taskId = value.taskId;
+                            result.taskName = value.taskName;
+                            result.startDate = value.startDate;
+                            result.endDate = value.endDate;
+                            result.duration = value.duration;
+                            result.progress = value.progress;
+                            result.predecessor = value.predecessor;
+                            result.parentID = value.parentID;
+                            result.info = value.info;
+                        }
                     }
                 }
                 if (batchmodel.Deleted != null)
                 {
                     for (var i = 0; i < batchmodel.Deleted.Count; i++)
                     {
-                        DataList.Remove(DataList.Where(ds => ds.taskId == batchmodel.Deleted[i].taskId).FirstOrDefault());
+                        var record = DataList.FirstOrDefault(ds => ds.taskId == batchmodel.Deleted[i].taskId);
+                        if (record != null)
+                        {
+                            DataList.Remove(record);
+                        }
                     }
                 }
                 if (batchmodel.Added != null)
                 {
-                    for (var i = 0; i < batchmodel.Added.Count(); i++)
+                    for (var i = 0; i < batchmodel.Added.Count; i++)
                     {
                         DataList.Insert(0, batchmodel.Added[i]);
                     }

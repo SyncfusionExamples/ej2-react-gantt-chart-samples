@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { GanttComponent,Inject, Edit, Selection, Toolbar, ColumnsDirective, ColumnDirective, Filter } from '@syncfusion/ej2-react-gantt';
+import { GanttComponent,Inject, Edit, Selection, Toolbar, ColumnsDirective, ColumnDirective } from '@syncfusion/ej2-react-gantt';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 function App() {
   const dataSource = new DataManager({
@@ -8,7 +7,6 @@ function App() {
     adaptor: new UrlAdaptor(),
     crossDomain: true
   });
-  let ganttInstance;
   const taskFields = {
     id: 'taskId',
     name: 'taskName',
@@ -26,19 +24,11 @@ function App() {
     allowTaskbarEditing: true,
     showDeleteConfirmDialog: true
   };  
-  const actionbegin = (args) => {
-       
-  };
   const splitterSettings = {
     columnIndex: 3
   };
-  const onCreated = () => {
-        
-  };
-  const projectStartDate = new Date('03/26/2025');
-  const projectEndDate = new Date('09/10/2025');
   const gridLines = 'Both';
-  const toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'Indent', 'Outdent'];
+  const toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel'];
   const timelineSettings = {
     topTier: {
       unit: 'Week',
@@ -54,36 +44,33 @@ function App() {
 
   return (
     <>
-      <GanttComponent id='Editing' 
-        ref={gantt => ganttInstance = gantt} 
+      <GanttComponent id='UrlAdaptorGantt' 
         dataSource={dataSource} 
         dateFormat={'MMM dd, y'} 
         treeColumnIndex={1} 
         allowSelection={true} 
         highlightWeekends={true} 
-        created={onCreated} 
-        allowFiltering={true}
         enableHover={true} 
         taskFields={taskFields} 
         timelineSettings={timelineSettings} 
         labelSettings={labelSettings} 
         splitterSettings={splitterSettings} 
         height='650px' 
+        width='100%'
         editSettings={editSettings} 
         gridLines={gridLines} 
         toolbar={toolbar} 
-        actionBegin={actionbegin}
         >
         <ColumnsDirective>
           <ColumnDirective field='taskId' width='80'></ColumnDirective>
           <ColumnDirective field='taskName' headerText='Job Name' width='250' clipMode='EllipsisWithTooltip'></ColumnDirective>
-          <ColumnDirective field='startDate'></ColumnDirective>
-          <ColumnDirective field='endDate' ></ColumnDirective>
-          <ColumnDirective field='duration'></ColumnDirective>
-          <ColumnDirective field='progress'></ColumnDirective>
-          <ColumnDirective field='predecessor'></ColumnDirective>
+          <ColumnDirective field='startDate' width='120'></ColumnDirective>
+          <ColumnDirective field='endDate' width='120'></ColumnDirective>
+          <ColumnDirective field='duration' width='120'></ColumnDirective>
+          <ColumnDirective field='progress' width='120'></ColumnDirective>
+          <ColumnDirective field='predecessor' width='120'></ColumnDirective>
         </ColumnsDirective>
-        <Inject services={[Edit, Selection, Toolbar, Filter]}/>
+        <Inject services={[Edit, Selection, Toolbar]}/>
       </GanttComponent>
     </>
   )
