@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Gnatt_chart_EJ2_2.0\\augest\\web api adaptor\\web api adaptor\\WebApiAdaptor.server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{334C8F03-85AB-44BA-9910-A0E8D18157F0}|WebApiAdaptor.server\\WebApiAdaptor.server.csproj|d:\\gnatt_chart_ej2_2.0\\augest\\web api adaptor\\web api adaptor\\webapiadaptor.server\\webapiadaptor.server\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{334C8F03-85AB-44BA-9910-A0E8D18157F0}|WebApiAdaptor.server\\WebApiAdaptor.server.csproj|solutionrelative:webapiadaptor.server\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\Gnatt_chart_EJ2_2.0\\augest\\web api adaptor\\web api adaptor\\WebApiAdaptor.server\\WebApiAdaptor.server\\Startup.cs",
+              "RelativeDocumentMoniker": "WebApiAdaptor.server\\Startup.cs",
+              "ToolTip": "D:\\Gnatt_chart_EJ2_2.0\\augest\\web api adaptor\\web api adaptor\\WebApiAdaptor.server\\WebApiAdaptor.server\\Startup.cs",
+              "RelativeToolTip": "WebApiAdaptor.server\\Startup.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T08:46:25.381Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
